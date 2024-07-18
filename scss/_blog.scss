@@ -1,0 +1,100 @@
+@import "vars";
+
+.blog {
+  margin-bottom: 86px;
+
+  &__title {
+    margin-bottom: 70px;
+    padding: 28px 0 32px;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 100;
+    font-family: $main-font;
+    color: $dark;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    min-height: 594px;
+  }
+
+  &__img {
+    min-height: 344px;
+    margin-bottom: 20px;
+  }
+
+  &__detail {
+    font-size: 22px;
+    line-height: 22px;
+    color: $accent-color;
+    font-family: $second-font;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+  }
+
+  &__author {
+   margin: 0 0 29px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: $second-font;
+    color: $dark;
+    font-weight: normal;
+    padding-bottom: 14px;
+    border-bottom: 2px solid lighten($dark, 70%);
+
+    span {
+      position: relative;
+      padding-right: 20px;
+    }
+
+    span::after {
+      position: absolute;
+     content: "";
+     top: 8px;
+     right: 0;
+     width: 20px;
+     height: 1.4px;
+     background: $dark;
+     transform: rotate(90deg);
+    }
+
+    span:last-child::after {
+      display: none;
+    }
+  }
+
+  &__leed {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $second-font;
+    color: $light-dark;
+    font-weight: normal;
+    text-transform: capitalize;
+   margin-bottom: 20px;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: $dark;
+    color: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: $main-font;
+    text-decoration: none;
+    padding: 4px 25px;
+    border: 1.8px solid black;
+    transition: all 0.8s;
+
+    &:hover {
+      background-color: lighten($accent-color, 20%);
+    }
+  }
+
+}

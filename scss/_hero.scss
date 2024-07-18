@@ -1,0 +1,54 @@
+@import "vars";
+@import "overlay";
+
+.hero {
+  min-height: 640px;
+  padding: 140px 0 89px 0;
+  color: $white-color;
+  text-align: center;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: $main-font;
+    font-weight: lighter;
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  &__strong {
+    display: inline-block;
+    font-size: 55px;
+    line-height: 60px;
+    font-family: $second-font;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: $main-font;
+    font-weight: lighter;
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    padding: 21px 56px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white-color;
+    border: 2px solid $white-color;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: lighten($accent-color,  20%);
+    }
+  }
+}

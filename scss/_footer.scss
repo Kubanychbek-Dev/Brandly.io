@@ -1,0 +1,17 @@
+@import "vars";
+
+.footer {
+  padding: 65px 0;
+  background-color: lighten(red, 20%);
+  background-image: url(../img/Mask\ Group.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__text {
+    color: $white-color;
+    font-size: 20px;
+    font-family: $main-font;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,35 @@
+@media screen and (max-width: 415px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    padding: 28px 0 32px;
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 35%;
+      background-color: $accent-color;
+      width: 118px;
+      height: 3px;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      background-color: $accent-color;
+      width: 118px;
+      height: 3px;
+    }
+  }
+
+  .header__nav {
+    left: 27%;
+  }
+}
